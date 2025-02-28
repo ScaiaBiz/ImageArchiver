@@ -36,7 +36,7 @@ npm run deploy
 
 ## Pages
 
-- [https://scaia-biz.github.io/img-archiver/](https://scaia-biz.github.io/ImageArchiver/)
+- [https://scaia-biz.github.io/ImageArchiver/](https://scaia-biz.github.io/ImageArchiver/)
 
 ## Credits
 
