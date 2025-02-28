@@ -39,16 +39,18 @@ function Photocamera({ setImageUrl, saveUrl = null, folder, otherData }) {
 	// }, [image, fileMetadata]);
 
 	const savePicture = async () => {
-		const data = {
-			lastModified: fileMetadata.lastModified,
-			lastModifiedDate: fileMetadata.lastModifiedDate,
-			name: fileMetadata.name,
-			size: fileMetadata.size,
-			type: fileMetadata.type,
-			folder: folder,
-		};
+		const formData = new FormData();
+		formData.append('file', fileMetadata);
+		// const data = {
+		// 	lastModified: fileMetadata.lastModified,
+		// 	lastModifiedDate: fileMetadata.lastModifiedDate,
+		// 	name: fileMetadata.name,
+		// 	size: fileMetadata.size,
+		// 	type: fileMetadata.type,
+		// 	folder: folder,
+		// };
 
-		console.log(data);
+		console.log(formData);
 		console.log(fileMetadata);
 
 		// const pic = await sendRequest(
