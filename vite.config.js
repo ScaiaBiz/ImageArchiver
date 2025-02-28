@@ -10,4 +10,5 @@ export default defineConfig({
 			generateScopedName: '[name]_[local]_[hash:base64:5]',
 		},
 	},
+	base: '/ImageArchiver/',
 });
