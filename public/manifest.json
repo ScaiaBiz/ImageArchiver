@@ -2,9 +2,13 @@
 	"name": "Image archiver",
 	"short_name": "Image archiver",
 	"description": "Image archiver",
+	"start_url": "/ImageArchiver/index.html",
 	"display": "standalone",
+	"orientation": "portrait",
 	"theme_color": "#0000ff",
 	"background_color": "#ff0000",
+	"scope": "/ImageArchiver/",
+	"lang": "it-IT",
 	"icons": [
 		{
 			"src": "/logo.svg",
