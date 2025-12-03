@@ -2,15 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import classes from './Photocamera.module.css';
 
-// import IconButton from './IconButton';
-
-// import { useHttpClient } from '../hooks/http-hooks';
-// import ErrorModal from './ErrorModal';
-// import LoadingSpinner from './LoadingSpinner';
-
 function Photocamera({ setImageUrl, saveUrl = null, folder, otherData }) {
-	// const { clearError, error, isLoading, sendRequest } = useHttpClient();
-
 	const [image, setImage] = useState(null);
 	const [fileMetadata, setFileMetadata] = useState(null);
 
@@ -53,24 +45,11 @@ function Photocamera({ setImageUrl, saveUrl = null, folder, otherData }) {
 		console.log(formData);
 		console.log(fileMetadata);
 
-		// const pic = await sendRequest(
-		// 	saveUrl,
-		// 	'POST',
-		// 	{
-		// 		image: image,
-		// 		data: data,
-		// 		otherData: otherData,
-		// 	},
-		// 	{ 'Content-Type': 'application/json' }
-		// );
-
 		// setImageUrl(pic.url + '?' + Date.now());
 	};
 
 	return (
 		<React.Fragment>
-			{/* {error && <ErrorModal error={error} onClear={clearError} />}
-			{isLoading && <LoadingSpinner asOverlay />} */}
 			<div className={classes.wrapper}>
 				<div id='fileInputContainer'>
 					<label

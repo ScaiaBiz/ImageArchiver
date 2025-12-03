@@ -10,8 +10,6 @@ function App() {
 		<div className='App'>
 			<h1>Archivia immagini</h1>
 			<Photocamera setImageUrl={setImageUrl} />
-
-			{/* {imageUrl && <img src={imageUrl} alt='foto' style={{m}} />} */}
 		</div>
 	);
 }
